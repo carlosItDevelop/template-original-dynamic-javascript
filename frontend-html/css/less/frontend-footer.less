@@ -1,0 +1,49 @@
+/* -----------------------------------------
+   Frontend Footer styles
+----------------------------------------- */
+#footer {
+    background: @dark;
+    color: @gray-lighter;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .footer-column {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .footer-column-title {
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .footer-map {
+            background: url(../img/globus.png) no-repeat left center;
+            background-size: 40%;
+        }
+
+        .footer-link {
+            line-height: 18px;
+            color: @gray-lighter;
+            text-decoration: none;
+            .transition(color);
+            .transition-duration(0.4s);
+
+            &:hover {
+                color: @gray-light;
+            }
+        }
+
+    }
+
+    .footer-copyright {
+        background: @dark-light;
+        padding: 15px 0;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+}

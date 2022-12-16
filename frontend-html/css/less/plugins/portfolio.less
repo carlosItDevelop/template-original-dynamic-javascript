@@ -1,0 +1,90 @@
+/* -----------------------------------------
+   Portfolio styles
+----------------------------------------- */
+.portfolio {
+    .tabs {
+        .nav-tabs {
+            margin-bottom: 30px;
+            li {
+                a {
+                    border-radius: 0;
+                    background-color: @white;
+                    padding: 15px 15px 14px;
+                    box-shadow: none;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid transparent;
+                    letter-spacing: 1px;
+                    font-size: 16px;
+                    .transition(all);
+                    .transition-duration(0.4s);
+
+                    &:hover {
+                        color: @mainColor;
+                    }
+                }
+
+                &.active a {
+                    border-bottom: 1px solid @mainColor;
+                    color: @mainColor;
+                    &:after {
+                        right: auto;
+                        left: auto;
+                        bottom: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .mix {
+        display:none;
+        min-height: 1px;
+        float: left;
+    }
+
+    &.portfolio-4-columns {
+        .mix {width: 25%;}
+    }
+    &.portfolio-3-columns {
+        .mix {width: 33.3333333%;}
+    }
+    &.portfolio-2-columns {
+        .mix {width: 50%;}
+    }
+}
+
+/* -----------------------------------------
+   Portfolio item
+----------------------------------------- */
+.portfolio-item {
+    
+    .project-info {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            line-height: 30px;
+            span {
+                display: inline-block;
+                width: 130px;
+                font-weight: bold;
+                color: darken(@text-color, 15%);
+                i {
+                    margin-right: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/* -----------------------------------------
+   Related projects
+----------------------------------------- */
+
+.related-projects {
+    .img-holder {
+        height: 300px;
+    }
+}

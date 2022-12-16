@@ -1,0 +1,79 @@
+/* -----------------------------------------
+   Responisve styles
+----------------------------------------- */
+.responsive-menu-toggle {
+    padding: 20px 0;
+    float: left;
+    margin-right: 15px;
+    i {font-size: 24px;}
+    color: @text-color;
+    display: none;
+}
+
+/* -----------------------------------------
+   Ipad 3/4
+----------------------------------------- */
+@media all and (max-width: 1024px)  {
+    
+    /* Navigation */
+    .responsive-menu-toggle{display: block;}
+    #header .site-nav {
+       display: none;
+       margin-right: 0;
+       width: 100%;
+        >ul {
+            >li {
+                width: 100%;
+                >a {
+                    border-bottom: 1px solid @border-color;
+                }
+                &.open {
+                    .dropdown-menu {
+                        float: left;
+                        width: 100%;
+                        position: relative;
+                        li.dropdown-submenu {
+                            &:hover {
+                                .dropdown-menu {
+                                    float: left;
+                                    width: 100%;
+                                    position: relative;
+                                    top: auto;
+                                    left: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #content #topbar {
+        height: auto;
+        .breadcrumb {text-align: left;}
+    }
+
+    .projects {margin-bottom: 25px;}
+
+    .portfolio.portfolio-4-columns .mix {
+      width: 50% !important;
+    }
+}
+
+/* -----------------------------------------
+   Most Tablets and some phones
+----------------------------------------- */
+@media all and (max-width: 991px)  {
+    .responsive-menu-toggle{position: absolute;}
+    #header .logo {
+        text-align: center;
+        width: 100%;
+    }
+    #morphsearch {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        .morphsearch-content .search-column { width: 100%; }
+    }
+}

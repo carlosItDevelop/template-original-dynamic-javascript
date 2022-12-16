@@ -1,0 +1,919 @@
+<!doctype html>
+<!--[if lt IE 8]><html class="no-js lt-ie8"> <![endif]-->
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog single item | Dynamic frontend</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="application-name" content="" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900' rel='stylesheet' type='text/css'>
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="css/icons.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="css/main.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="css/plugins.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="css/custom.css" rel="stylesheet" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="icon" href="img/ico/favicon.ico" type="image/png">
+        <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+        <meta name="msapplication-TileColor" content="#3399cc" />
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        <div id="header" class="header-fixed">
+            <!-- #header -->
+            <div class="container">
+                <a href="#" class="responsive-menu-toggle">
+                    <i class="fa fa-reorder"></i>
+                    <span class="sr-only">Open Menu</span>
+                </a>
+                <a href="index.html" class="logo">
+                    <img src="img/sitelogo.png" alt="Dynamic Frontend logo">
+                </a>
+                <div id="morphsearch" class="morphsearch">
+                    <form class="morphsearch-form">
+                        <input class="morphsearch-input" type="search" placeholder="Search..." />
+                        <button class="morphsearch-submit" type="submit">Search</button>
+                    </form>
+                    <div class="morphsearch-content">
+                        <div class="search-column">
+                            <h2>People</h2>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/2.jpg" alt="Dean Huges" />
+                                <h3>Dean Huges</h3>
+                            </a>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/4.jpg" alt="Selena Jones" />
+                                <h3>Selena Jones</h3>
+                            </a>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/5.jpg" alt="Mike Thomas" />
+                                <h3>Mike Thomas</h3>
+                            </a>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/6.jpg" alt="Jim Kerry" />
+                                <h3>Jim Kerry</h3>
+                            </a>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/7.jpg" alt="Little Jonh" />
+                                <h3>Little Jonh</h3>
+                            </a>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/8.jpg" alt="Keith Smith" />
+                                <h3>Keith Smith</h3>
+                            </a>
+                        </div>
+                        <div class="search-column">
+                            <h2>Projects</h2>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project1.jpg" alt="Project 1" />
+                                <h3>Project title 1</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project2.jpg" alt="Project 2" />
+                                <h3>Project title 2</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project3.jpg" alt="Project 3" />
+                                <h3>Project title 3</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project4.jpg" alt="Project 4" />
+                                <h3>Project title 4</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project5.jpg" alt="Project 5" />
+                                <h3>Project title 5</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project6.jpg" alt="Project 6" />
+                                <h3>Project title 6</h3>
+                            </a>
+                        </div>
+                        <div class="search-column">
+                            <h2>Recent</h2>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/projects/thumbs/project4.jpg" alt="Project 4" />
+                                <h3>Project title 4</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/blog/thumbs/blog.jpg" alt="Blog" />
+                                <h3>Creativity standards rise once again</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/blog/thumbs/blog1.jpg" alt="Blog" />
+                                <h3>Find the perfect spot when parking your car</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/blog/thumbs/blog2.jpg" alt="Blog" />
+                                <h3>What we need to know when do laundry in public spots</h3>
+                            </a>
+                            <a class="search-media-object" href="#">
+                                <img class="round" src="img/avatars/6.jpg" alt="Jim Kerry" />
+                                <h3>Jim Kerry</h3>
+                            </a>
+                            <a class="search-media-object" href="project-item.html">
+                                <img src="img/blog/thumbs/blog3.jpg" alt="Blog" />
+                                <h3>How to make your garden looks like paradise</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /morphsearch-content -->
+                    <span class="morphsearch-close"></span>
+                </div>
+                <!-- /morphsearch -->
+                <div class="site-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages </a>
+                            <ul class="dropdown-menu right" role="menu">
+                                <li><a href="blank.html">Blank page</a>
+                                </li>
+                                <li><a href="services.html">Services</a>
+                                </li>
+                                <li><a href="about.html">About us</a>
+                                </li>
+                                <li><a href="site-map.html">Site map</a>
+                                </li>
+                                <li><a href="contact.html">Contact</a>
+                                </li>
+                                <li><a href="faq.html">FAQ</a>
+                                </li>
+                                <li><a href="404.html">404</a>
+                                </li>
+                                <li><a href="login.html">Login &amp; register</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">2rd level</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Second level</a>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#">Even More..</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">3rd level</a>
+                                                </li>
+                                                <li><a href="#">3rd level</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Second level</a>
+                                        </li>
+                                        <li><a href="#">Second level</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio </a>
+                            <ul class="dropdown-menu right" role="menu">
+                                <li><a href="portfolio-item.html">Portfolio item</a>
+                                </li>
+                                <li><a href="portfolio-2.html">2 columns</a>
+                                </li>
+                                <li><a href="portfolio-3.html">3 columns</a>
+                                </li>
+                                <li><a href="portfolio-4.html">4 columns</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog </a>
+                            <ul class="dropdown-menu right" role="menu">
+                                <li><a href="blog.html">Blog list</a>
+                                </li>
+                                <li><a href="blog-item.html">Blog item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://themes.suggelab.com/#product=dynamic" target="_blank">Admin Theme</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / .site-nav -->
+            </div>
+            <!-- / .container -->
+        </div>
+        <!-- / #header -->
+        <div id="content">
+            <!-- #content -->
+            <!-- SECTION START TOPBAR -->
+            <section id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <!-- .row start -->
+                        <div class="col-md-6">
+                            <!-- col-md-6 start here -->
+                            <h1>Blog Item</h1>
+                        </div>
+                        <!-- col-md-6 end here -->
+                        <div class="col-md-6 text-right">
+                            <!-- col-md-6 start here -->
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a>
+                                </li>
+                                <li><a href="#">Pages</a>
+                                </li>
+                                <li class="active">Blog item</li>
+                            </ul>
+                        </div>
+                        <!-- col-md-6 end here -->
+                    </div>
+                    <!-- / .row -->
+                </div>
+            </section>
+            <!-- SECTION END -->
+            <!-- SECTION START -->
+            <section class="white-bg blog-item">
+                <div class="container">
+                    <!-- .container -->
+                    <div class="col-md-8">
+                        <!-- col-md-8 start here -->
+                        <div class="blog-post">
+                            <!-- Start .blogpost -->
+                            <h2 class="blog-post-title">Creativity standarts rise once again</h2>
+                            <div class="blog-meta">
+                                <span class="date">
+                        <a href="#">
+                            <i class="fa fa-calendar"></i>
+                            3 feb 2015
+                        </a>
+                    </span>
+                                <span class="seperator">/</span>
+                                <span class="author">
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            SuggeElson
+                        </a>                        
+                    </span>
+                                <span class="seperator">/</span>
+                                <span class="category">
+                        <a href="#">
+                            Creativity
+                        </a>
+                    </span>
+                                <span class="seperator">/</span>
+                                <span class="comments">
+                        <a href="blog-item.html#comments">
+                            <i class="fa fa-comments"></i> 5 Comments
+                        </a>                        
+                    </span>
+                                <span class="seperator">/</span>
+                                <span>
+                        <a href="#">
+                            <i class="fa fa-image"></i>
+                        </a>
+                    </span>
+                            </div>
+                            <div class="img-holder">
+                                <a href="blog-item.html">
+                                    <div class="bg-img-holder">
+                                        <img src="img/blog/blog.jpg" alt="blog post">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog-post-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <blockquote>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus ducimus ipsam vitae nulla rem nemo, aut, quam sequi odit quibusdam. Autem sit eum quae, sequi odit commodi doloremque quibusdam?
+                                </blockquote>
+                                <p>Voluptate eaque cum repellat molestias ducimus quibusdam, harum dicta atque autem laboriosam vel quisquam numquam, tenetur animi asperiores consequuntur quod delectus laborum unde quo assumenda? Dolorum, quia natus nesciunt
+                                    ratione nostrum perspiciatis quaerat harum veritatis fuga, officiis consectetur amet dolor, maiores animi ad delectus temporibus aliquid ipsum saepe, a odit qui ullam voluptatem ipsa?</p>
+                                <p>Illo eaque magni velit perspiciatis, aperiam, eius omnis aliquam recusandae doloribus facere, doloremque inventore aspernatur placeat odio at, ipsa exercitationem. Architecto iure laudantium, fuga quod incidunt quae qui
+                                    rerum aspernatur veniam, rem quidem! Molestias sapiente ab, labore magnam ut distinctio a, commodi quas eveniet ratione maxime hic, architecto reprehenderit provident.</p>
+                                <div class="tagcloud">
+                                    <a href="#">Sales</a>
+                                    <a href="#">Bootstrap</a>
+                                    <a href="#">Seo</a>
+                                    <a href="#">Admin template</a>
+                                    <a href="#">Web app</a>
+                                </div>
+                                <div class="row mt20 mb20">
+                                    <!-- .row start -->
+                                    <div class="col-md-6">
+                                        <!-- col-md-6 start here -->
+                                        <h4 class="mt10 mb0">Share this post:</h4>
+                                    </div>
+                                    <!-- col-md-6 end here -->
+                                    <div class="col-md-6">
+                                        <!-- col-md-6 start here -->
+                                        <div class="social-buttons pull-right clearfix">
+                                            <a href="#" class="btn btn-social-icon btn-facebook pull-left mr10 ">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-social-icon btn-twitter pull-left mr10">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-social-icon btn-google-plus pull-left mr10">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-social-icon btn-pinterest pull-left mr10">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-social-icon btn-tumblr pull-left">
+                                                <i class="fa fa-tumblr"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- col-md-6 end here -->
+                                </div>
+                                <!-- / .row -->
+                                <hr class="mt30 mb50">
+                                <div class="blog-post-pager">
+                                    <ul class="pager">
+                                        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> One fine post ...</a>
+                                        </li>
+                                        <li class="next"><a href="#">Find perfect spot ... <span aria-hidden="true">&rarr;</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="mt30 mb50">
+                                <div class="row">
+                                    <!-- .row start -->
+                                    <div class="col-md-12">
+                                        <!-- col-md-12 start here -->
+                                        <div class="panel panel-default">
+                                            <!-- Start .panel -->
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">Posted by: <span> <a href="#">SuggeElson</a></span>
+                                                </h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <img class="blog-post-author-avatar" src="img/avatars/128.jpg" alt="Avatar">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                    deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                        <!-- End .panel -->
+                                    </div>
+                                    <!-- col-md-12 end here -->
+                                </div>
+                                <!-- / .row -->
+                                <div class="blog-post-comments mt30">
+                                    <div class="heading mt20 mb30">
+                                        <h3>Comments</h3>
+                                    </div>
+                                    <ul class="blog-post-comments-list">
+                                        <li>
+                                            <div class="comment">
+                                                <div class="comment-author">
+                                                    <img class="comment-avatar" src="img/avatars/3.jpg" alt="avatar">
+                                                    <strong>Jonh Doe</strong>
+                                                </div>
+                                                <div class="comment-meta">
+                                                    <a href="#" title="#">April 30, 2015 at 18:50</a>
+                                                </div>
+                                                <p class="comment-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ratione fuga iusto velit pariatur eaque quis ullam excepturi odio, quisquam amet necessitatibus possimus eligendi, perferendis deleniti quasi dicta veritatis aperiam.
+                                                </p>
+                                                <div class="comment-reply">
+                                                    <a href="#" class="btn btn-default"><i class="fa fa-reply"></i> Reply</a> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="comment comment-reply">
+                                                <div class="comment-author">
+                                                    <img class="comment-avatar" src="img/avatars/2.jpg" alt="avatar">
+                                                    <strong>Steevie Jonson</strong>
+                                                </div>
+                                                <div class="comment-meta">
+                                                    <a href="#" title="#">April 30, 2015 at 19:50</a>
+                                                </div>
+                                                <p class="comment-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ratione fuga iusto velit pariatur eaque quis ullam excepturi odio, quisquam amet necessitatibus possimus eligendi, perferendis deleniti quasi dicta veritatis aperiam.
+                                                </p>
+                                                <div class="comment-reply">
+                                                    <a href="#" class="btn btn-default"><i class="fa fa-reply"></i> Reply</a> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="comment">
+                                                <div class="comment-author">
+                                                    <img class="comment-avatar" src="img/avatars/8.jpg" alt="avatar">
+                                                    <strong>Linda Towns</strong>
+                                                </div>
+                                                <div class="comment-meta">
+                                                    <a href="#" title="#">April 31, 2015 at 12:50</a>
+                                                </div>
+                                                <p class="comment-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                                <div class="comment-reply">
+                                                    <a href="#" class="btn btn-default"><i class="fa fa-reply"></i> Reply</a> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <!-- .row start -->
+                                    <div class="col-md-12">
+                                        <!-- col-md-12 start here -->
+                                        <div class="heading mt20 mb30">
+                                            <h3>Leave a comment</h3>
+                                        </div>
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <div class="col-lg-12">
+                                                    <div class="row">
+                                                        <!-- Start .row -->
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <input type="text" class="form-control" placeholder="Name">
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <input type="email" class="form-control" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .row -->
+                                                </div>
+                                            </div>
+                                            <!-- End .form-group  -->
+                                            <div class="form-group">
+                                                <div class="col-lg-12">
+                                                    <input type="text" class="form-control" placeholder="website">
+                                                </div>
+                                            </div>
+                                            <!-- End .form-group  -->
+                                            <div class="form-group">
+                                                <div class="col-lg-12">
+                                                    <textarea class="form-control" name="textarea" id="textarea" rows="3" placeholder="Your Comment"></textarea>
+                                                </div>
+                                            </div>
+                                            <!-- End .form-group  -->
+                                            <div class="form-group">
+                                                <div class="col-lg-12">
+                                                    <div class="row">
+                                                        <!-- Start .row -->
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <button type="submit" class="btn btn-default btn-lg">Comment</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End .row -->
+                                                </div>
+                                            </div>
+                                            <!-- End .form-group  -->
+                                        </form>
+                                    </div>
+                                    <!-- col-md-12 end here -->
+                                </div>
+                                <!-- / .row -->
+                            </div>
+                        </div>
+                        <!-- End .blogpost -->
+                    </div>
+                    <!-- col-md-8 end here -->
+                    <div class="sidebar sidebar-right col-md-4">
+                        <!-- col-md-4 start here -->
+                        <div class="sidebar-widget">
+                            <div class="tabs simple-tabs">
+                                <!-- Start .rs tabs -->
+                                <ul id="rstab" class="nav nav-tabs nav-justified mb0">
+                                    <li class="active">
+                                        <a href="#popular-posts" data-toggle="tab"><i class="fa fa-heart"></i>  Popular </a>
+                                    </li>
+                                    <li>
+                                        <a href="#recent-posts" data-toggle="tab"><i class="fa fa-list"></i>  Recent </a>
+                                    </li>
+                                    <li>
+                                        <a href="#comments-posts" data-toggle="tab"><i class="fa fa-comments"></i> Comments </a>
+                                    </li>
+                                </ul>
+                                <div id="rstab-content" class="tab-content">
+                                    <div class="tab-pane fade active in" id="popular-posts">
+                                        <ul class="blog-list-small">
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/blog/thumbs/blog.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">Creativity standarts rise once again</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 5 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/blog/thumbs/blog1.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">Find the perfect spot when parking your car</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 12 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/blog/thumbs/blog2.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">What we need to know when do laundry in public spots</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 7 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/blog/thumbs/blog3.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">How to make your garden looks like paradise</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 2 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="recent-posts">
+                                        <ul class="blog-list-small">
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/projects/thumbs/project1.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">Rollers on the deck in this good morning</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 5 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/projects/thumbs/project2.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">How to buy very nice painting in good price</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 12 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/projects/thumbs/project3.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">How to not loose your super expencive watch. Free tips.</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 7 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="blog-item.html">
+                                                    <img src="img/projects/thumbs/project4.jpg" alt="blog post">
+                                                </a>
+                                                <h4>
+                                                    <a href="blog-item.html">Planet of the monkey has brooke sales records.</a>
+                                                </h4>
+                                                <div class="blog-meta">
+                                                    <a href="blog-item.html#comments">
+                                                        <i class="fa fa-comments"></i> 2 Comments
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="comments-posts">
+                                        <ul class="comments-list-small">
+                                            <li>
+                                                <a href="#" class="avatar">
+                                                    <img src="img/avatars/3.jpg" alt="Avatar">
+                                                </a>
+                                                <p class="comment">
+                                                    <strong>James Simpson:</strong>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus ...
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar">
+                                                    <img src="img/avatars/4.jpg" alt="Avatar">
+                                                </a>
+                                                <p class="comment">
+                                                    <strong>Sidney Weaver:</strong>
+                                                    Cum deleniti officiis voluptatum nobis rerum, fugiat porro. Officia blanditiis voluptas natus nisi ...
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar">
+                                                    <img src="img/avatars/5.jpg" alt="Avatar">
+                                                </a>
+                                                <p class="comment">
+                                                    <strong>Jonh Doe:</strong>
+                                                    Aliquid nesciunt dolores sequi nostrum debitis voluptas enim. Optio ipsam perspiciatis ...
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="avatar">
+                                                    <img src="img/avatars/6.jpg" alt="Avatar">
+                                                </a>
+                                                <p class="comment">
+                                                    <strong>Jeremy Bennet:</strong>
+                                                    Dolore vitae, fuga obcaecati voluptatum dolorem tempore molestias. Nihil laborum, id ...
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h2 class="sidebar-widget-title">From twitter</h2>
+                            <ul class="twitter-feed mb50">
+                                <li>
+                                    <i class="fa fa-twitter"></i>
+                                    <p>
+                                        CSS is powerful, performant yet remarkably easy to use. Designers, start coding with uilang ...
+                                        <a href="http://t.co/EAB4lIOxfA" target="_blank">smashingmagazine.com … </a>
+                                    </p>
+                                    <span>1 hour ago</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-twitter"></i>
+                                    <p>
+                                        How do you deal with fixed width banner ads in a RWD site?” Create responsive adverts for their partners in-house
+                                        <a href="http://t.co/MLcCirJgn3" target="_blank">http://paulrobertlloyd.com … </a>
+                                    </p>
+                                    <span>3 hour ago</span>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/SuggeElson" class="btn btn-social btn-twitter" target="_blank">
+                                        <i class="fa fa-twitter color-white"></i> Follow us on Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h2 class="sidebar-widget-title">Tag cloud</h2>
+                            <div class="tagcloud">
+                                <a href="#">Sales</a>
+                                <a href="#">Bootstrap</a>
+                                <a href="#">Web</a>
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Social</a>
+                                <a href="#">Seo</a>
+                                <a href="#">Admin template</a>
+                                <a href="#">Web app</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col-md-4 end here -->
+                </div>
+                <!-- / .container -->
+            </section>
+            <!-- SECTION END -->
+        </div>
+        <!-- / #content -->
+        <div id="overlay" class="overlay"></div>
+        <div id="footer">
+            <!-- #footer -->
+            <div class="container">
+                <div class="row">
+                    <!-- .row start -->
+                    <div class="col-md-4 footer-column">
+                        <!-- col-md-4 start here -->
+                        <img src="img/logo-footer.png" alt="Footer logo">
+                        <p class="mb20">Only creative ideas &amp; and quality standarts</p>
+                        <div class="footer-map">
+                            <address>
+                                <strong>Head Office:</strong>
+                                <br>356 Spain, office 247
+                                <br>Barcelona, SP 94107
+                                <br>
+                            </address>
+                            <abbr title="Phone Number"><strong>Phone:</strong>
+                            </abbr>(52) 3543 25478
+                            <br>
+                            <abbr title="Fax"><strong>Fax:</strong>
+                            </abbr>(52) 7025 56584
+                            <br>
+                            <abbr title="Email Address"><strong>Email:</strong>
+                            </abbr>web@dynamic.com
+                        </div>
+                    </div>
+                    <!-- col-md-4 end here -->
+                    <div class="col-md-4 footer-column">
+                        <!-- col-md-4 start here -->
+                        <h4 class="footer-column-title">Recent posts</h4>
+                        <ul class="list-unstyled">
+                            <li class="blog-list">
+                                <div class="blog-title">
+                                    <h5><a href="blog-item.html">Creativity standards rise once again</a>
+                                    </h5>
+                                </div>
+                                <div class="blog-meta">
+                                    <span class="date">
+                                <i class="fa fa-calendar s16"></i>
+                                3th Fev 2015
+                            </span>
+                                    <span class="seperator">/</span>
+                                    <span class="comments">
+                                <a href="blog-item.html#comments">
+                                    <i class="fa fa-comments"></i> 17
+                                </a>                        
+                            </span>
+                                </div>
+                            </li>
+                            <li class="blog-list">
+                                <div class="blog-title">
+                                    <h5><a href="blog-item.html">Find the perfect spot when parking your car</a>
+                                    </h5>
+                                </div>
+                                <div class="blog-meta">
+                                    <span class="date">
+                                <i class="fa fa-calendar s16"></i>
+                                1th Fev 2015
+                            </span>
+                                    <span class="seperator">/</span>
+                                    <span class="comments">
+                                <a href="blog-item.html#comments">
+                                    <i class="fa fa-comments"></i> 10
+                                </a>                        
+                            </span>
+                                </div>
+                            </li>
+                            <li class="blog-list">
+                                <div class="blog-title">
+                                    <h5><a href="blog-item.html">What we need to know when do laundry in public spots</a>
+                                    </h5>
+                                </div>
+                                <div class="blog-meta">
+                                    <span class="date">
+                                <i class="fa fa-calendar s16"></i>
+                                31th Jan 2015
+                            </span>
+                                    <span class="seperator">/</span>
+                                    <span class="comments">
+                                <a href="blog-item.html#comments">
+                                    <i class="fa fa-comments"></i> 28
+                                </a>                        
+                            </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- col-md-4 end here -->
+                    <div class="col-md-4 col-xs-10 footer-column">
+                        <!-- col-md-4 start here -->
+                        <h5 class="mb20"><strong>Subscribe</strong> to Our Newsletter to get latest updates, Discount Offers &amp; free support:</h5>
+                        <form class="form-inline mb30" role="form">
+                            <div class="form-group">
+                                <div class="input-group input-icon">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                                    <span class="input-group-btn">
+                                <button type="submit" class="btn btn-success">Subscribe</button>
+                            </span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <!-- .row start -->
+                            <div class="col-md-6  col-sm-6 clearfix mb20">
+                                <!-- col-md-6 start here -->
+                                <a href="#" class="btn btn-social-icon btn-facebook pull-left mr10">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="pull-left footer-link">
+                                    <strong>Like us</strong>
+                                    <br>on Facebook
+                                </a>
+                            </div>
+                            <!-- col-md-6 end here -->
+                            <div class="col-md-6  col-sm-6 clearfix mb20">
+                                <!-- col-md-6 start here -->
+                                <a href="#" class="btn btn-social-icon btn-twitter pull-left mr10">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pull-left footer-link">
+                                    <strong>Follow us</strong>
+                                    <br>on Twitter
+                                </a>
+                            </div>
+                            <!-- col-md-6 end here -->
+                            <div class="col-md-6 col-sm-6 clearfix mb20">
+                                <!-- col-md-6 start here -->
+                                <a href="#" class="btn btn-social-icon btn-instagram pull-left mr10">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="pull-left footer-link">
+                                    <strong>Follow us</strong>
+                                    <br>on Instagram
+                                </a>
+                            </div>
+                            <!-- col-md-6 end here -->
+                            <div class="col-md-6 col-sm-6 clearfix ">
+                                <!-- col-md-6 start here -->
+                                <a href="#" class="btn btn-social-icon btn-google-plus pull-left mr10">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="pull-left footer-link">
+                                    <strong>Add us</strong>
+                                    <br>on GooglePlus
+                                </a>
+                            </div>
+                            <!-- col-md-6 end here -->
+                        </div>
+                        <!-- / .row -->
+                    </div>
+                    <!-- col-md-4 end here -->
+                </div>
+                <!-- / .row -->
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="pull-left">
+                        Copyrights © 2014 <a href="http://suggeelson.com/" class="strong" target="_blank">SuggeElson</a>. All rights reserved.
+                    </p>
+                    <p class="pull-right">
+                        <a href="#" class="mr5">Terms of use</a>
+                        |
+                        <a href="#" class="ml5 mr25">Privacy police</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- / #footer -->
+        <!-- Back to top -->
+        <div id="back-to-top"><a href="#">Back to Top</a>
+        </div>
+        <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="plugins/core/pace/pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-2.1.1.min.js">\x3C/script>')
+        </script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="js/bootstrap/bootstrap.js"></script>
+        <!-- Core plugins ( not remove ) -->
+        <script src="js/libs/modernizr.custom.js"></script>
+        <!-- Remove click delay in touch -->
+        <script src="plugins/core/fastclick/fastclick.js"></script>
+        <!-- Css browser selector -->
+        <script src="plugins/core/browser-selector/css_browser_selector.js"></script>
+        <!-- Class condition helper -->
+        <script src="js/libs/classie.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="js/main.js"></script>
+        <script src="js/pages/blank.js"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+/* -----------------------------------------
+   Frontend styles
+----------------------------------------- */
+
+//Custom variables
+// --------------------------------------------------
+@import "bootstrap/mixins.less";
+@import "custom-mixins.less";
+@import "custom-variables.less";
+
+//Include tempalte helpers
+// --------------------------------------------------
+@import "helpers.less";
+
+// Import the custom variables
+
+/*  IE10 and windows phone 8 fix. */
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+html,body{
+    height: 100%;
+}
+html {
+    &.ff3 {
+        min-height: 100%;
+        body {
+            min-height: 100%;
+        }
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff; 
+    color: @text-color;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    position: relative;
+
+    &.ovh  {overflow: hidden;}
+
+    &.header-fixed {
+        padding-top: 70px;
+
+        #slider {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #content {
+            padding: 25px 0 0;
+        }
+    }
+
+}
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; outline: none !important; }
+
+.animated {opacity: 1 !important;}
+
+
+//Include header styles
+// --------------------------------------------------
+@import "frontend-header.less";
+
+//Include slyder structure styles
+// --------------------------------------------------
+@import "slider.less";
+
+
+#content {
+    position: relative;
+    z-index: 1;
+    margin: 0px auto;
+    padding: 0;
+
+    #topbar {
+        background-color: lighten(@body-bg, 4%);
+        height: 60px;
+        margin-top: -23px;
+        margin-bottom: 25px;
+        -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+        box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+
+        .breadcrumb {
+            margin-bottom: 0;
+            background: transparent;
+            padding-right: 0;
+        }
+
+        h1 {
+            margin-top: 7px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 24px;
+            color: @gray-light;
+            padding-left: 10px;
+        }
+    }
+}
+
+//Include header styles
+// --------------------------------------------------
+@import "frontend-footer.less";
+
+
+//Include template plugins
+// --------------------------------------------------
+@import "plugins.less";
+
+//Include frontend elements
+// --------------------------------------------------
+@import "frontend-elements.less";
+@import "custom-elements.less";
+
+//Include frontend responsive 
+// --------------------------------------------------
+@import "frontend-responsive.less";
